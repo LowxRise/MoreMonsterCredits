@@ -1,0 +1,10 @@
+{
+  "name": "MoreMonsterCredits",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/LowxRise/MoreMonsterCredits",
+  "description": "Separate extra monster-budget settings for stages 3 through 10.",
+  "dependencies": [
+    "bbepis-BepInExPack-5.4.2113",
+    "Rune580-Risk_Of_Options-2.8.5"
+  ]
+}

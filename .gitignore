@@ -1,0 +1,14 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.log
+*.zip
+*.dll
+*.pdb
+*.nupkg
+Thumbs.db
+Desktop.ini
+Thunderstore/icon.jpg
