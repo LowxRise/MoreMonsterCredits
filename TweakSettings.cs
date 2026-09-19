@@ -24,5 +24,15 @@ namespace LocalTweaks
             ModSettingsManager.AddOption(new CheckBoxOption(entry), guid, modName);
             return entry;
         }
+
+        internal static ConfigEntry<float> StepSlider(ConfigFile file, string section, string name,
+            float value, float min, float max, float increment, string description, string guid, string modName)
+        {
+            var entry = file.Bind(section, name, value,
+                new ConfigDescription(description, new AcceptableValueRange<float>(min, max)));
+            ModSettingsManager.AddOption(new StepSliderOption(entry,
+                new StepSliderConfig { min = min, max = max, increment = increment }), guid, modName);
+            return entry;
+        }
     }
 }
